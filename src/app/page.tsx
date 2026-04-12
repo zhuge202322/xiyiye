@@ -11,7 +11,7 @@ async function getCategories() {
       next: { revalidate: 3600 } // Cache for 1 hour
     });
     if (!res.ok) return [];
-    const data = await res.json();
+    const data = JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));
     return data;
   } catch (e) {
     console.error("Failed to fetch categories", e);
@@ -25,7 +25,7 @@ async function getProducts() {
       next: { revalidate: 3600 } // Cache for 1 hour
     });
     if (!res.ok) return [];
-    const data = await res.json();
+    const data = JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));
     return data;
   } catch (e) {
     console.error("Failed to fetch products", e);
@@ -39,7 +39,7 @@ async function getPosts() {
       next: { revalidate: 3600 } // Cache for 1 hour
     });
     if (!res.ok) return [];
-    const data = await res.json();
+    const data = JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));
     return data;
   } catch (e) {
     console.error("Failed to fetch posts", e);

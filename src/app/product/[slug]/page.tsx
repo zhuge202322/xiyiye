@@ -9,7 +9,7 @@ async function getProduct(slug: string) {
       next: { revalidate: 3600 }
     });
     if (!res.ok) return null;
-    const data = await res.json();
+    const data = JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));
     return data.length > 0 ? data[0] : null;
   } catch (e) {
     console.error("Failed to fetch product", e);
@@ -23,7 +23,7 @@ async function getCategories() {
       next: { revalidate: 3600 }
     });
     if (!res.ok) return [];
-    return await res.json();
+    return JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));
   } catch (e) {
     return [];
   }

@@ -6,7 +6,7 @@ async function getCategories() {
       next: { revalidate: 3600 }
     });
     if (!res.ok) return [];
-    return await res.json();
+    return JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));
   } catch (e) {
     return [];
   }
