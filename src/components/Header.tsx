@@ -21,14 +21,14 @@ export default async function Header() {
       <div className="bg-brand-primary text-white text-xs font-medium py-2 px-6 hidden lg:block">
         <div className="max-w-[1440px] mx-auto flex justify-between items-center">
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-brand-secondary transition">全球领先的日化 OEM/ODM 源头工厂</a>
+            <a href="#" className="hover:text-brand-secondary transition">World Leading Daily Chemical OEM/ODM Source Factory</a>
             <a href="#" className="hover:text-brand-secondary transition flex items-center">
-              <Award className="w-3 h-3 mr-1" /> ISO 9001 & GMPC 认证
+              <Award className="w-3 h-3 mr-1" /> ISO 9001 & GMPC Certified
             </a>
           </div>
           <div className="flex space-x-6 items-center">
-            <a href="#" className="hover:text-brand-secondary transition">B2B 采购门户</a>
-            <a href="#" className="hover:text-brand-secondary transition">投资者关系</a>
+            <a href="#" className="hover:text-brand-secondary transition">B2B Purchasing Portal</a>
+            <a href="#" className="hover:text-brand-secondary transition">Investor Relations</a>
             <div className="flex items-center cursor-pointer hover:text-brand-secondary transition">
               <Globe className="w-3 h-3 mr-1" /> Global / English
             </div>
@@ -40,15 +40,15 @@ export default async function Header() {
       <header className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm relative">
         <div className="max-w-[1440px] mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
           <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">欧</div>
-            <div className="text-xl md:text-2xl font-extrabold text-brand-primary">中山欧得宝家庭用品有限公司</div>
+            <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">P</div>
+            <div className="text-xl md:text-2xl font-extrabold text-brand-primary">Pura Group</div>
           </a>
           
           <nav className="hidden lg:flex h-full">
             <div className="flex h-full">
               <div className="group h-full">
                 <a href="/shop" className="px-5 h-full flex items-center text-sm font-bold text-brand-dark group-hover:text-brand-primary border-b-2 border-transparent group-hover:border-brand-primary transition cursor-default">
-                  产品分类 <ChevronDown className="w-4 h-4 ml-1" />
+                  Products <ChevronDown className="w-4 h-4 ml-1" />
                 </a>
                 
                 {/* 超级下拉菜单 */}
@@ -68,7 +68,7 @@ export default async function Header() {
                             {cat.image ? (
                               <img src={cat.image.src} alt={cat.name} className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" />
                             ) : (
-                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">暂无图片</div>
+                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">No Image</div>
                             )}
                           </div>
                           <h4 className="font-bold text-brand-dark text-lg group-hover/card:text-brand-primary transition-colors">{cat.name}</h4>
@@ -80,19 +80,16 @@ export default async function Header() {
               </div>
 
               <a href="#" className="px-5 h-full flex items-center text-sm font-bold text-brand-dark hover:text-brand-primary border-b-2 border-transparent hover:border-brand-primary transition">
-                厨房与硬表面清洁 <ChevronDown className="w-4 h-4 ml-1" />
-              </a>
-              <a href="#" className="px-5 h-full flex items-center text-sm font-bold text-brand-dark hover:text-brand-primary border-b-2 border-transparent hover:border-brand-primary transition">
-                OEM/ODM 代工
+                OEM/ODM
               </a>
               <a href="/news" className="px-5 h-full flex items-center text-sm font-bold text-brand-dark hover:text-brand-primary border-b-2 border-transparent hover:border-brand-primary transition">
-                产品新闻
+                News
               </a>
               <a href="/about" className="px-5 h-full flex items-center text-sm font-bold text-brand-dark hover:text-brand-primary border-b-2 border-transparent hover:border-brand-primary transition">
-                关于我们
+                About Us
               </a>
               <a href="/contact" className="px-5 h-full flex items-center text-sm font-bold text-brand-dark hover:text-brand-primary border-b-2 border-transparent hover:border-brand-primary transition">
-                联系我们
+                Contact Us
               </a>
             </div>
           </nav>
@@ -100,7 +97,7 @@ export default async function Header() {
           <div className="hidden lg:flex items-center space-x-5">
             <button className="text-brand-dark hover:text-brand-primary transition"><Search className="w-5 h-5" /></button>
             <a href="/contact" className="bg-brand-primary text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-opacity-90 transition-all shadow-md">
-              获取免费样品
+              Get Free Samples
             </a>
           </div>
           <button className="lg:hidden text-brand-dark"><Menu className="w-6 h-6" /></button>
