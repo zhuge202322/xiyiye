@@ -16,14 +16,14 @@ interface Product {
 export default function ProductGrid({ products }: { products: Product[] }) {
   const [showAll, setShowAll] = useState(false);
 
-  // 显示的产品：如果展开则显示全部，否则显示前4个
+  // Products to display: if expanded, show all, otherwise show the first 4
   const displayedProducts = showAll ? products : products.slice(0, 4);
 
   return (
     <section className="py-24 bg-gray-50 relative">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark mb-4">热门产品展示 (Top Products)</h2>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark mb-4">Top Products</h2>
           <div className="w-20 h-1.5 bg-brand-primary rounded-full"></div>
         </div>
 
@@ -38,7 +38,7 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                     className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" 
                   />
                 ) : (
-                  <div className="text-gray-400 font-medium">暂无图片</div>
+                  <div className="text-gray-400 font-medium">No Image</div>
                 )}
               </div>
               
@@ -70,7 +70,7 @@ export default function ProductGrid({ products }: { products: Product[] }) {
           ))}
         </div>
 
-        {/* 查看更多按钮 */}
+        {/* View more button */}
         <div className="mt-16 flex justify-center">
           {products.length > 4 ? (
             <button
@@ -78,9 +78,9 @@ export default function ProductGrid({ products }: { products: Product[] }) {
               className="bg-white border-2 border-brand-primary text-brand-primary px-10 py-4 rounded-full text-center font-bold text-lg hover:bg-brand-primary hover:text-white transition-all flex items-center shadow-sm"
             >
               {showAll ? (
-                <>收起产品展示 <ChevronUp className="w-5 h-5 ml-2" /></>
+                <>Show Less <ChevronUp className="w-5 h-5 ml-2" /></>
               ) : (
-                <>下拉查看更多产品 <ChevronDown className="w-5 h-5 ml-2" /></>
+                <>View More Products <ChevronDown className="w-5 h-5 ml-2" /></>
               )}
             </button>
           ) : (
@@ -88,7 +88,7 @@ export default function ProductGrid({ products }: { products: Product[] }) {
               href="/shop"
               className="bg-white border-2 border-brand-primary text-brand-primary px-10 py-4 rounded-full text-center font-bold text-lg hover:bg-brand-primary hover:text-white transition-all flex items-center shadow-sm"
             >
-              前往商城查看全部产品 <ChevronRight className="w-5 h-5 ml-2" />
+              View All Products <ChevronRight className="w-5 h-5 ml-2" />
             </a>
           )}
         </div>

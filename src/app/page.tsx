@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Award, Globe, ChevronDown, Search, Menu, ArrowRight, PlayCircle, ChevronRight, FlaskConical, Check, Download, Phone, Mail } from "lucide-react";
+import { Award, Globe, ChevronDown, Search, Menu, ArrowRight, PlayCircle, ChevronRight, FlaskConical, Check, Download, Droplets, Leaf, ShieldCheck, Star } from "lucide-react";
 import HeroCarousel from "@/components/HeroCarousel";
 import CategoryMatrix from "@/components/CategoryMatrix";
 import ProductGrid from "@/components/ProductGrid";
@@ -56,13 +56,13 @@ export default async function Home() {
 
   return (
     <div className="bg-[#f8f9fa] flex-1 flex flex-col">
-{/* 1. 首屏大片轮播 */}
+      {/* 1. Hero Carousel */}
       <HeroCarousel />
 
-      {/* 2. 品类导流矩阵 (从 WooCommerce 动态拉取) */}
+      {/* 2. Category Matrix (Dynamic from WooCommerce) */}
       <CategoryMatrix categories={categories} />
 
-      {/* 3. 功效与科技 */}
+      {/* 3. Efficacy & Technology */}
       <section className="py-24 bg-brand-secondary overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -76,17 +76,17 @@ export default async function Home() {
                   <div className="w-12 h-12 bg-brand-primary/10 rounded-full flex items-center justify-center text-brand-primary">
                     <FlaskConical className="w-6 h-6" />
                   </div>
-                  <div className="font-extrabold text-2xl text-brand-dark">专利级</div>
+                  <div className="font-extrabold text-2xl text-brand-dark">Patented Formula</div>
                 </div>
-                <p className="text-sm font-medium text-brand-gray">靶向微胶囊爆香技术，摩擦生香，抵御异味长达12周。</p>
+                <p className="text-sm font-medium text-brand-gray">Targeted microcapsule fragrance release technology, keeping clothes smelling fresh for up to 12 weeks.</p>
               </div>
             </div>
 
             <div className="space-y-10 lg:pl-10">
               <div>
-                <h2 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">不仅是清洁，<br/>更是前所未有的感官体验。</h2>
+                <h2 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Not just cleaning, <br/>but a sensory experience.</h2>
                 <p className="text-xl text-brand-gray leading-relaxed">
-                  PURA 研发实验室与全球顶级香精公司深度合作。我们的配方不仅能有效瓦解顽固污渍，更能带来如高级香水般的层次感。
+                  PURA R&D lab collaborates with top global fragrance companies to ensure every drop of product is safe, environmentally friendly, and highly effective.
                 </p>
               </div>
 
@@ -98,8 +98,8 @@ export default async function Home() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-dark mb-2">99.9% 活氧深层除菌</h4>
-                    <p className="text-brand-gray font-medium">采用活氧（Oxy-Action）技术，深入织物纤维与死角，连根拔起细菌与螨虫。</p>
+                    <h4 className="text-xl font-bold text-brand-dark mb-2">99.9% Enzyme-based Stain Removal</h4>
+                    <p className="text-brand-gray font-medium">Using enzyme technology, deep cleaning of fabric fibers and dead angles, removing bacteria and mites.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -109,8 +109,8 @@ export default async function Home() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-dark mb-2">温和亲肤环保配方</h4>
-                    <p className="text-brand-gray font-medium">无磷、无荧光增白剂、无刺激性防腐剂。对婴幼儿及敏感肌肤安全无害。</p>
+                    <h4 className="text-xl font-bold text-brand-dark mb-2">Mild and Eco-friendly Formula</h4>
+                    <p className="text-brand-gray font-medium">No phosphorus, no fluorescent whitening agents, no irritating preservatives. Safe for babies and sensitive skin.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -120,8 +120,8 @@ export default async function Home() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-dark mb-2">高级定制香氛矩阵</h4>
-                    <p className="text-brand-gray font-medium">拥有数百种成熟香型库（木质调、花香调、海洋调），支持品牌方私有香型定制。</p>
+                    <h4 className="text-xl font-bold text-brand-dark mb-2">Customizable Fragrance Matrix</h4>
+                    <p className="text-brand-gray font-medium">With a library of hundreds of mature fragrances (woody, floral, oceanic), supporting private label customization.</p>
                   </div>
                 </div>
               </div>
@@ -130,15 +130,15 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 3.5 热门产品展示区 (从 WooCommerce 动态拉取) */}
+      {/* 3.5 Hot Products Grid (Dynamic from WooCommerce) */}
       <ProductGrid products={products} />
 
-      {/* 4. 消费者教育 */}
+      {/* 4. Consumer Education */}
       <section className="py-24 bg-white">
         <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6">只需三步，唤醒衣物澎湃香气。</h2>
-            <p className="text-xl text-brand-gray">了解如何正确使用我们的明星产品——留香珠，以达到最佳的护衣效果。</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6">Only 3 steps, <br/>unleash the fragrance.</h2>
+            <p className="text-xl text-brand-gray">Learn how to use our star product - scent beads, to achieve the best clothing care effect.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center relative">
@@ -149,8 +149,8 @@ export default async function Home() {
                 <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&q=80&w=400" alt="Pour beads" className="w-full h-full object-cover" />
               </div>
               <div className="text-brand-primary font-black text-xl mb-2">STEP 1</div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-3">直接倒入洗衣机内筒</h3>
-              <p className="text-brand-gray font-medium">取适量香珠（约半盖），直接撒入空的洗衣机滚筒底部。请勿将香珠放入洗涤剂槽中。</p>
+              <h3 className="text-2xl font-bold text-brand-dark mb-3">Pour directly into drum</h3>
+              <p className="text-brand-gray font-medium">Take an appropriate amount of scent beads (about half a cap), pour directly into the bottom of the washing machine drum. Do not put beads in the detergent slot.</p>
             </div>
 
             <div className="relative z-10 flex flex-col items-center">
@@ -158,8 +158,8 @@ export default async function Home() {
                 <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=400" alt="Add clothes" className="w-full h-full object-cover" />
               </div>
               <div className="text-brand-primary font-black text-xl mb-2">STEP 2</div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-3">放入待洗衣物</h3>
-              <p className="text-brand-gray font-medium">将需要洗涤的衣物放在香珠上方。香珠在水流的作用下会均匀渗透至每一寸纤维。</p>
+              <h3 className="text-2xl font-bold text-brand-dark mb-3">Add clothes</h3>
+              <p className="text-brand-gray font-medium">Put the clothes to be washed on top of the scent beads. The beads will evenly penetrate every inch of fabric under the action of water.</p>
             </div>
 
             <div className="relative z-10 flex flex-col items-center">
@@ -167,17 +167,17 @@ export default async function Home() {
                 <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=400" alt="Add detergent" className="w-full h-full object-cover" />
               </div>
               <div className="text-brand-primary font-black text-xl mb-2">STEP 3</div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-3">加入日常洗涤剂</h3>
-              <p className="text-brand-gray font-medium">按正常洗衣流程，在相应的洗涤剂槽中加入洗衣液或洗衣凝珠，开始洗涤程序。</p>
+              <h3 className="text-2xl font-bold text-brand-dark mb-3">Add detergent</h3>
+              <p className="text-brand-gray font-medium">Follow the normal washing procedure, add detergent to the designated slot, and start the washing cycle.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4.5 文章展示区 */}
+      {/* 4.5 Article Showcase */}
       <ArticleShowcase posts={posts} />
 
-      {/* 5. 询盘表单 */}
+      {/* 5. Inquiry Form */}
       <section className="py-24 bg-brand-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img src="https://images.unsplash.com/photo-1563452675059-cf5697693fc7?auto=format&fit=crop&q=80&w=2000" alt="Factory" className="w-full h-full object-cover" />
@@ -187,68 +187,68 @@ export default async function Home() {
         <div className="max-w-[1440px] mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-6">您的世界级<br/>制造与研发后盾。</h2>
+              <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Your world-class <br/> manufacturing & R&D backing.</h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-10 font-medium">
-                作为日化行业的幕后英雄，我们为全球多个知名零售商品牌（Private Label）提供从概念到货架的端到端制造服务。20,000平米智能工厂，为您保障产能与品质。
+                As the unsung heroes behind the daily chemical industry, we provide end-to-end manufacturing services from concept to shelf for multiple renowned private labels globally. A 20,000 sqm smart factory ensures both capacity and quality.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div>
                   <div className="text-4xl font-black text-brand-accent mb-2">15+</div>
-                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">年行业经验</div>
+                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">Years Experience</div>
                 </div>
                 <div>
                   <div className="text-4xl font-black text-brand-accent mb-2">300+</div>
-                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">成熟可商用配方</div>
+                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">Mature Commercial Formulas</div>
                 </div>
                 <div>
                   <div className="text-4xl font-black text-brand-accent mb-2">10w+</div>
-                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">每日产能 (瓶/盒)</div>
+                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">Daily Capacity</div>
                 </div>
                 <div>
                   <div className="text-4xl font-black text-brand-accent mb-2">ISO</div>
-                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">GMPC / SGS 认证</div>
+                  <div className="text-gray-400 font-bold uppercase tracking-wider text-sm">GMPC / SGS Certified</div>
                 </div>
               </div>
 
               <a href="#" className="inline-flex items-center bg-white text-brand-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all">
-                下载工厂资质手册 PDF <Download className="w-5 h-5 ml-2" />
+                Download Factory Brochure PDF <Download className="w-5 h-5 ml-2" />
               </a>
             </div>
 
             <div className="bg-white rounded-3xl p-10 shadow-2xl text-brand-dark relative">
-              <h3 className="text-3xl font-extrabold mb-2">开启您的品牌定制</h3>
-              <p className="text-brand-gray font-medium mb-8">填写以下信息，我们的业务大客户经理将在24小时内与您联系，并安排免费样品寄送。</p>
+              <h3 className="text-3xl font-extrabold mb-2">Start your brand customization</h3>
+              <p className="text-brand-gray font-medium mb-8">Fill out the information below, and our key account manager will contact you within 24 hours to arrange free sample delivery.</p>
               
               <form className="space-y-5">
                 <div className="grid grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-sm font-bold mb-2">您的姓名 *</label>
+                    <label className="block text-sm font-bold mb-2">Your Name *</label>
                     <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition" />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold mb-2">公司名称 *</label>
+                    <label className="block text-sm font-bold mb-2">Company Name *</label>
                     <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition" />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-bold mb-2">企业邮箱 *</label>
+                  <label className="block text-sm font-bold mb-2">Corporate Email *</label>
                   <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition" />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold mb-2">意向产品分类</label>
+                  <label className="block text-sm font-bold mb-2">Product Category of Interest</label>
                   <select className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary transition appearance-none">
-                    <option>洗衣香珠 / 凝珠系列</option>
-                    <option>衣物柔顺剂 / 洗衣液</option>
-                    <option>马桶与卫浴清洁</option>
-                    <option>厨房重油污清洁</option>
-                    <option>其他定制需求</option>
+                    <option>Scent Beads / Pods Series</option>
+                    <option>Fabric Softener / Liquid Detergent</option>
+                    <option>Toilet and Bathroom Cleaner</option>
+                    <option>Kitchen Heavy Oil Cleaner</option>
+                    <option>Other Custom Needs</option>
                   </select>
                 </div>
                 <button type="button" className="w-full bg-brand-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-brand-primary/90 transition shadow-lg mt-4">
-                  提交询盘申请
+                  Submit Inquiry
                 </button>
-                <p className="text-xs text-gray-400 text-center mt-4">提交即代表您同意我们的隐私政策。您的信息将被严格保密。</p>
+                <p className="text-xs text-gray-400 text-center mt-4">By submitting, you agree to our privacy policy. Your information will be kept strictly confidential.</p>
               </form>
             </div>
           </div>

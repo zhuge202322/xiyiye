@@ -105,7 +105,7 @@ export default function ArticleShowcase({ posts }: { posts: Post[] }) {
                     />
                   ) : (
                     <div className="w-full h-auto aspect-[4/3] sm:aspect-video bg-gray-200 rounded-3xl shadow-lg flex items-center justify-center">
-                      <span className="text-gray-400 font-medium">暂无图片</span>
+                      <span className="text-gray-400 font-medium">No Image</span>
                     </div>
                   )}
                 </SlideInView>
