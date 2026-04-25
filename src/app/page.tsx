@@ -1,4 +1,4 @@
-import { ShieldCheck, FlaskConical, Factory, Award, Globe, Headset } from "lucide-react";
+import { ShieldCheck, FlaskConical, Factory, Award, Globe, Headset, Ship, Plane, Recycle, PencilRuler } from "lucide-react";
 import HeroCarousel from "@/components/HeroCarousel";
 import CategoryMatrix from "@/components/CategoryMatrix";
 import ProductGrid from "@/components/ProductGrid";
@@ -154,6 +154,42 @@ export default async function Home() {
 
       {/* 5. Article Showcase */}
       <ArticleShowcase posts={posts} />
+
+      {/* 6. Our Services Always Go The Extra Mile */}
+      <section className="py-24 bg-brand-secondary/40 border-t border-gray-100">
+        <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark mb-5 leading-tight">
+              Our Services Always Go The Extra Mile
+            </h2>
+            <div className="w-16 h-1 bg-brand-primary mx-auto rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
+            {[
+              { icon: Ship, title: 'Bulk Shipping', desc: 'Bulk goods are transported by sea at a low cost usually.' },
+              { icon: Plane, title: 'Quick Shipping', desc: 'If hurry, we can send the goods by air as well at an extra cost.' },
+              { icon: ShieldCheck, title: 'Quality Control', desc: 'We have a 3rd party QC to guarantee the quality.' },
+              { icon: Recycle, title: 'Sustainable', desc: 'The materials we used are eco-friendly and bio-degradable.' },
+              { icon: PencilRuler, title: 'OEM available', desc: 'OEM & ODM is available.' },
+              { icon: Globe, title: 'Global Support', desc: 'Contact us at anytime to solve your after-sale problem.' },
+            ].map((s) => {
+              const Icon = s.icon;
+              return (
+                <div key={s.title} className="flex items-start gap-5">
+                  <div className="w-14 h-14 rounded-full border-2 border-brand-primary text-brand-primary flex items-center justify-center shrink-0 bg-white">
+                    <Icon className="w-7 h-7" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-extrabold text-brand-dark mb-2">{s.title}</h3>
+                    <p className="text-brand-gray font-medium leading-relaxed">{s.desc}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
