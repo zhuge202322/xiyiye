@@ -22,11 +22,10 @@ export default async function Footer() {
           
           <div className="lg:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">P</div>
-              <div className="text-2xl font-extrabold text-white">Pura Group</div>
+              <div className="w-12 h-12 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-2xl">M</div>
             </a>
             <p className="text-gray-400 mb-8 max-w-sm leading-relaxed">
-              Committed to providing global customers with extreme cleansing, safe and eco-friendly home care products. 15 years of deep cultivation in the daily chemical OEM/ODM field, your trusted manufacturing partner.
+              Committed to providing global customers with premium, safe and eco-friendly home care products. 15 years of experience in daily-chemical OEM/ODM — your trusted manufacturing partner.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-primary hover:text-white transition-all"><Globe className="w-5 h-5" /></a>
@@ -51,10 +50,9 @@ export default async function Footer() {
             <h4 className="text-white font-bold text-lg mb-6">Company</h4>
             <ul className="space-y-4 text-gray-400">
               <li><a href="/about" className="hover:text-brand-primary transition flex items-center group"><ArrowRight className="w-3 h-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> About Us</a></li>
-              <li><a href="/news" className="hover:text-brand-primary transition flex items-center group"><ArrowRight className="w-3 h-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> News</a></li>
+              <li><a href="/oem" className="hover:text-brand-primary transition flex items-center group"><ArrowRight className="w-3 h-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> OEM/ODM</a></li>
+              <li><a href="/news" className="hover:text-brand-primary transition flex items-center group"><ArrowRight className="w-3 h-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Blog</a></li>
               <li><a href="/contact" className="hover:text-brand-primary transition flex items-center group"><ArrowRight className="w-3 h-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Contact Us</a></li>
-              <li><a href="#" className="hover:text-brand-primary transition flex items-center group"><ArrowRight className="w-3 h-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Join Us</a></li>
-              <li><a href="#" className="hover:text-brand-primary transition flex items-center group"><ArrowRight className="w-3 h-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> OEM/ODM</a></li>
             </ul>
           </div>
 
@@ -79,7 +77,7 @@ export default async function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Pura Group (Zhongshan) Co., Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} myklens.com All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-500">
             <a href="#" className="hover:text-brand-primary transition">Privacy Policy</a>

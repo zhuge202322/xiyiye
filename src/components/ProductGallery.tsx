@@ -21,7 +21,7 @@ export default function ProductGallery({ images, productName }: { images: Image[
             className="w-full h-full object-contain hover:scale-105 transition-transform duration-700 cursor-zoom-in"
           />
         ) : (
-          <div className="text-gray-400 font-medium">暂无图片</div>
+          <div className="text-gray-400 font-medium">No image</div>
         )}
       </div>
       

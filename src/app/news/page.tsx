@@ -25,14 +25,14 @@ export default async function NewsPage() {
       >
         <div className="absolute inset-0 bg-white/40"></div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-4 lg:px-8 text-center flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-4 tracking-tight">产品新闻</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-4 tracking-tight">Blog</h1>
           <p className="text-gray-800 font-medium text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
-            探索 PURA 最新研发动态、行业趋势与新品发布。
+            Latest R&D updates, industry trends and new product launches from MyKlens.
           </p>
           <p className="text-gray-600 font-bold flex items-center justify-center text-sm">
-            <a href="/" className="hover:text-brand-primary transition">首页</a> 
+            <a href="/" className="hover:text-brand-primary transition">Home</a> 
             <ChevronRight className="w-4 h-4 mx-2" /> 
-            <span className="text-brand-primary">产品新闻</span>
+            <span className="text-brand-primary">Blog</span>
           </p>
         </div>
       </div>
@@ -45,8 +45,8 @@ export default async function NewsPage() {
               const title = post.title.rendered;
               const excerpt = post.excerpt.rendered;
               const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-              // 格式化日期 (如：2024年4月11日)
-              const date = new Date(post.date).toLocaleDateString('zh-CN', {
+              // Format date
+              const date = new Date(post.date).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
@@ -69,7 +69,7 @@ export default async function NewsPage() {
                     ) : (
                       <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 bg-gray-100">
                         <Rss className="w-12 h-12 mb-3 opacity-20" />
-                        <span className="text-sm font-medium">暂无特色图</span>
+                        <span className="text-sm font-medium">No featured image</span>
                       </div>
                     )}
                     
@@ -93,7 +93,7 @@ export default async function NewsPage() {
                     />
                     
                     <div className="mt-auto flex items-center text-brand-primary font-bold text-sm">
-                      阅读全文 <ArrowRight className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform" />
+                      Read More <ArrowRight className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform" />
                     </div>
                   </div>
                 </a>
@@ -105,8 +105,8 @@ export default async function NewsPage() {
             <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mb-6">
               <Rss className="w-8 h-8 text-gray-400" />
             </div>
-            <h3 className="text-2xl font-extrabold text-brand-dark mb-3">暂无动态</h3>
-            <p className="text-gray-500 font-medium">目前还没有发布任何新闻内容，请稍后再来查看。</p>
+            <h3 className="text-2xl font-extrabold text-brand-dark mb-3">No posts yet</h3>
+            <p className="text-gray-500 font-medium">No articles have been published yet. Please check back later.</p>
           </div>
         )}
       </main>

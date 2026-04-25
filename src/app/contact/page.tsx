@@ -27,28 +27,28 @@ export default async function ContactPage() {
       >
         <div className="absolute inset-0 bg-white/40"></div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-4 lg:px-8 text-center flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-4 tracking-tight">联系我们</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-4 tracking-tight">Contact Us</h1>
           <p className="text-gray-800 font-medium text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
-            无论是 OEM/ODM 代工需求、配方定制，还是批量采购询价，我们的资深业务总监将在 24 小时内为您提供专属解答与专业服务。
+            Whether you need OEM/ODM manufacturing, formula customization, or bulk purchasing — our senior business managers will reply within 24 hours.
           </p>
           <p className="text-gray-600 font-bold flex items-center justify-center text-sm">
-            <a href="/" className="hover:text-brand-primary transition">首页</a> 
+            <a href="/" className="hover:text-brand-primary transition">Home</a> 
             <ChevronRight className="w-4 h-4 mx-2" /> 
-            <span className="text-brand-primary">关于我们 / 联系我们</span>
+            <span className="text-brand-primary">Contact Us</span>
           </p>
         </div>
       </div>
 
-      {/* 联系主体区域 */}
+      {/* Contact main */}
       <main className="flex-1 max-w-[1440px] mx-auto px-4 lg:px-8 py-16 lg:py-24 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-24">
           
-          {/* 左侧：联系信息 */}
+          {/* Left: contact info */}
           <div className="lg:col-span-2 flex flex-col justify-between">
             <div className="mb-12">
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-brand-dark mb-6">获取全球支持</h2>
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-brand-dark mb-6">Global Support</h2>
               <p className="text-brand-gray font-medium text-lg leading-relaxed">
-                Pura Group 拥有全球化的销售与服务网络。我们在多个时区设有联络代表，以便更快、更准地响应您的企业级代工需求。
+                MyKlens has a worldwide sales and service network. Our representatives across multiple time zones respond fast and accurately to your B2B manufacturing inquiries.
               </p>
             </div>
 
@@ -58,8 +58,8 @@ export default async function ContactPage() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-dark text-lg mb-2">全球研发中心及总部</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed font-medium">中国广东省广州市白云区<br/>高新技术产业园 88 号 研发科技楼</p>
+                  <h4 className="font-bold text-brand-dark text-lg mb-2">Global R&D HQ</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed font-medium">No. 88, Hi-Tech Industrial Park,<br/>Baiyun District, Guangzhou, Guangdong, China</p>
                 </div>
               </div>
 
@@ -68,7 +68,7 @@ export default async function ContactPage() {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-dark text-lg mb-2">大客户专线</h4>
+                  <h4 className="font-bold text-brand-dark text-lg mb-2">Key Account Hotline</h4>
                   <p className="text-gray-600 text-sm leading-relaxed font-medium">+86 400-123-4567<br/>+86 (020) 8888-9999</p>
                 </div>
               </div>
@@ -78,10 +78,10 @@ export default async function ContactPage() {
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-dark text-lg mb-2">电子邮件</h4>
+                  <h4 className="font-bold text-brand-dark text-lg mb-2">Email</h4>
                   <p className="text-gray-600 text-sm leading-relaxed font-medium">
-                    业务询价: <a href="mailto:sales@puragroup.com" className="text-brand-primary hover:underline">sales@puragroup.com</a><br/>
-                    研发合作: <a href="mailto:rd@puragroup.com" className="text-brand-primary hover:underline">rd@puragroup.com</a>
+                    Sales: <a href="mailto:sales@myklens.com" className="text-brand-primary hover:underline">sales@myklens.com</a><br/>
+                    R&D: <a href="mailto:rd@myklens.com" className="text-brand-primary hover:underline">rd@myklens.com</a>
                   </p>
                 </div>
               </div>
@@ -91,53 +91,54 @@ export default async function ContactPage() {
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-dark text-lg mb-2">营业与服务时间</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed font-medium">周一至周五：09:00 - 18:00 (GMT+8)<br/>收到询盘后 24 小时内必回复</p>
+                  <h4 className="font-bold text-brand-dark text-lg mb-2">Business Hours</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed font-medium">Mon - Fri: 09:00 - 18:00 (GMT+8)<br/>All inquiries answered within 24 hours</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* 右侧：高级询盘表单 */}
+          {/* Right: inquiry form */}
           <div className="lg:col-span-3">
             <div className="bg-white rounded-[2.5rem] p-8 md:p-14 shadow-2xl border border-gray-100 relative overflow-hidden h-full flex flex-col justify-center">
               <div className="absolute top-0 right-0 w-80 h-80 bg-brand-secondary rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
               
-              <h3 className="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4 relative z-10">在线提交您的询盘项目</h3>
-              <p className="text-gray-500 font-medium mb-10 relative z-10 text-lg">填写下方表单，我们将为您安排专属的大客户经理进行 1 对 1 对接，并寄送最新研发样品。</p>
+              <h3 className="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4 relative z-10">Submit Your Inquiry</h3>
+              <p className="text-gray-500 font-medium mb-10 relative z-10 text-lg">Fill out the form below and we&apos;ll assign a dedicated key account manager for 1-on-1 support, including free sample dispatch.</p>
 
               <form className="space-y-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-bold text-brand-dark mb-2">您的姓名 / 称呼 *</label>
-                    <input type="text" placeholder="如：张经理" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" required />
+                    <label className="block text-sm font-bold text-brand-dark mb-2">Your Name</label>
+                    <input type="text" placeholder="e.g., John Smith" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-brand-dark mb-2">公司名称 *</label>
-                    <input type="text" placeholder="贵公司的全称" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" required />
+                    <label className="block text-sm font-bold text-brand-dark mb-2">Company</label>
+                    <input type="text" placeholder="Your company name" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-bold text-brand-dark mb-2">企业邮箱 *</label>
-                    <input type="email" placeholder="example@company.com" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" required />
+                    <label className="block text-sm font-bold text-brand-dark mb-2">Email</label>
+                    <input type="email" placeholder="example@company.com" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-brand-dark mb-2">联系电话 *</label>
-                    <input type="tel" placeholder="您的手机号码或座机" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" required />
+                    <label className="block text-sm font-bold text-brand-dark mb-2">Phone</label>
+                    <input type="tel" placeholder="Your mobile or landline" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition text-brand-dark" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-brand-dark mb-2">需求类型 *</label>
+                  <label className="block text-sm font-bold text-brand-dark mb-2">Inquiry Type (optional)</label>
                   <div className="relative">
                     <select className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 pr-12 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition appearance-none text-brand-dark font-medium">
-                      <option>OEM 贴牌代工 / 大批量定制</option>
-                      <option>ODM 联合研发与全案策划</option>
-                      <option>申请索取免费实物样品</option>
-                      <option>寻找供应链分销合作</option>
-                      <option>工厂验厂与实地考察预约</option>
+                      <option value="">— Select (optional) —</option>
+                      <option>OEM Private Label / Bulk Customization</option>
+                      <option>ODM Co-development</option>
+                      <option>Request Free Samples</option>
+                      <option>Distribution Partnership</option>
+                      <option>Factory Audit / Site Visit</option>
                     </select>
                     <div className="absolute inset-y-0 right-0 flex items-center px-5 pointer-events-none text-gray-500">
                       <ChevronDown className="w-5 h-5" />
@@ -146,21 +147,20 @@ export default async function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-brand-dark mb-2">详细需求描述 *</label>
+                  <label className="block text-sm font-bold text-brand-dark mb-2">Project Details (optional)</label>
                   <textarea 
                     rows={5} 
-                    placeholder="请简要描述您的需求。例如：所需的产品类型（如留香珠、凝珠）、预估的采购量、是否需要特殊香型或环保认证，以及目标销售国家等..." 
-                    className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition resize-none text-brand-dark" 
-                    required
+                    placeholder="Briefly describe your needs — product type, quantity, target market, etc. Or leave blank and we&apos;ll reach out." 
+                    className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition resize-none text-brand-dark"
                   ></textarea>
                 </div>
 
                 <div className="pt-4">
                   <button type="button" className="w-full bg-brand-primary text-white py-5 rounded-2xl font-bold text-xl hover:bg-brand-primary/90 hover:-translate-y-1 transition-all shadow-xl shadow-brand-primary/30 flex items-center justify-center">
-                    发送询盘申请 <Send className="w-5 h-5 ml-3" />
+                    Send Inquiry <Send className="w-5 h-5 ml-3" />
                   </button>
                   <p className="text-sm text-gray-400 text-center mt-6">
-                    我们承诺严格保护您的商业机密。提交即代表同意我们的<a href="#" className="underline hover:text-brand-primary">隐私保护政策</a>。
+                    We strictly protect your business confidentiality. By submitting, you agree to our <a href="#" className="underline hover:text-brand-primary">Privacy Policy</a>.
                   </p>
                 </div>
               </form>

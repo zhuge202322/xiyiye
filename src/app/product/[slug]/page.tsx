@@ -52,9 +52,9 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
       <div className="bg-brand-secondary py-6 border-b border-gray-200">
         <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
           <p className="text-brand-gray font-medium flex items-center text-sm">
-            <a href="/" className="hover:text-brand-primary transition">首页</a> 
+            <a href="/" className="hover:text-brand-primary transition">Home</a> 
             <ChevronRight className="w-4 h-4 mx-2" /> 
-            <a href="/shop" className="hover:text-brand-primary transition">产品列表</a> 
+            <a href="/shop" className="hover:text-brand-primary transition">Products</a> 
             {category && (
               <>
                 <ChevronRight className="w-4 h-4 mx-2" /> 
@@ -96,28 +96,28 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                   </svg>
                 ))}
               </div>
-              <span className="text-brand-gray font-medium">B2B 商用认证 / 可定制配方</span>
+              <span className="text-brand-gray font-medium">B2B Certified / Customizable Formula</span>
             </div>
 
             {/* 产品简短描述 */}
             <div 
               className="prose prose-brand text-gray-600 text-lg leading-relaxed mb-10"
-              dangerouslySetInnerHTML={{ __html: product.short_description || '<p>暂无简短描述</p>' }}
+              dangerouslySetInnerHTML={{ __html: product.short_description || '<p>No short description.</p>' }}
             />
 
             {/* B2B 询盘与服务支持按钮组 */}
             <div className="space-y-4">
               <button className="w-full bg-brand-primary text-white py-5 px-8 rounded-full font-bold text-xl hover:bg-opacity-90 transition-all flex items-center justify-center shadow-lg shadow-brand-primary/30">
                 <MessageSquareText className="w-6 h-6 mr-3" />
-                提交询盘 / 获取批量报价
+                Submit Inquiry / Get Bulk Quote
               </button>
               
               <div className="grid grid-cols-2 gap-4">
                 <button className="w-full bg-white border-2 border-brand-primary text-brand-primary py-4 px-6 rounded-full font-bold text-lg hover:bg-brand-primary hover:text-white transition-all flex items-center justify-center">
-                  <FileText className="w-5 h-5 mr-2" /> 索取样品
+                  <FileText className="w-5 h-5 mr-2" /> Request Sample
                 </button>
                 <button className="w-full bg-gray-100 text-brand-dark py-4 px-6 rounded-full font-bold text-lg hover:bg-gray-200 transition-all flex items-center justify-center">
-                  <Download className="w-5 h-5 mr-2" /> 下载规格书
+                  <Download className="w-5 h-5 mr-2" /> Download Spec Sheet
                 </button>
               </div>
             </div>
@@ -125,15 +125,15 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             <ul className="mt-10 space-y-4 border-t border-gray-100 pt-8 text-sm text-gray-500 font-medium">
               <li className="flex items-center">
                 <Check className="w-5 h-5 text-brand-primary mr-3" />
-                支持 OEM/ODM 私人标签定制服务
+                Support OEM / ODM private label customization
               </li>
               <li className="flex items-center">
                 <Check className="w-5 h-5 text-brand-primary mr-3" />
-                全球供应链可送达，符合多国出口标准
+                Worldwide supply chain, complies with multi-country export standards
               </li>
               <li className="flex items-center">
                 <Check className="w-5 h-5 text-brand-primary mr-3" />
-                专业技术工程师 1对1 研发对接
+                Dedicated 1-on-1 R&D engineer support
               </li>
             </ul>
           </div>
@@ -143,13 +143,13 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         <div className="bg-white rounded-[2rem] shadow-sm border border-gray-100 overflow-hidden">
           <div className="flex border-b border-gray-100 bg-gray-50 px-8 pt-8 gap-8">
             <button className="pb-4 font-bold text-brand-primary border-b-4 border-brand-primary text-lg">
-              产品详细介绍
+              Product Details
             </button>
             <button className="pb-4 font-medium text-gray-400 hover:text-brand-dark transition text-lg border-b-4 border-transparent">
-              规格与包装参数
+              Specs & Packaging
             </button>
             <button className="pb-4 font-medium text-gray-400 hover:text-brand-dark transition text-lg border-b-4 border-transparent">
-              配方与安全 (MSDS)
+              Formula & MSDS
             </button>
           </div>
           <div className="p-8 md:p-16">
@@ -173,7 +173,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 /* 加粗文字 */
                 prose-strong:text-brand-dark prose-strong:font-extrabold
               "
-              dangerouslySetInnerHTML={{ __html: product.description || '<p>暂无详细描述</p>' }}
+              dangerouslySetInnerHTML={{ __html: product.description || '<p>No detailed description.</p>' }}
             />
           </div>
         </div>

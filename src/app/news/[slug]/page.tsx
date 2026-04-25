@@ -27,9 +27,9 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
   const title = post.title.rendered;
   const content = post.content.rendered;
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-  const authorName = post._embedded?.author?.[0]?.name || "PURA 官方团队";
+  const authorName = post._embedded?.author?.[0]?.name || "MyKlens Team";
   
-  const date = new Date(post.date).toLocaleDateString('zh-CN', {
+  const date = new Date(post.date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -41,9 +41,9 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
       <div className="bg-white border-b border-gray-100 py-6">
         <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
           <p className="text-gray-500 font-medium flex items-center text-sm">
-            <a href="/" className="hover:text-brand-primary transition">首页</a> 
+            <a href="/" className="hover:text-brand-primary transition">Home</a> 
             <ChevronRight className="w-4 h-4 mx-2" /> 
-            <a href="/news" className="hover:text-brand-primary transition">产品新闻</a>
+            <a href="/news" className="hover:text-brand-primary transition">Blog</a>
             <ChevronRight className="w-4 h-4 mx-2" /> 
             <span className="text-brand-primary font-bold line-clamp-1" dangerouslySetInnerHTML={{ __html: title }}></span>
           </p>
@@ -54,7 +54,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
         {/* 文章头部信息 */}
         <div className="mb-12 text-center">
           <a href="/news" className="inline-flex items-center text-brand-primary font-bold text-sm mb-8 hover:underline">
-            <ArrowLeft className="w-4 h-4 mr-2" /> 返回新闻列表
+            <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
           </a>
           <h1 
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-8 leading-tight"
@@ -68,10 +68,10 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
               <User className="w-4 h-4 mr-2 text-brand-primary" /> {authorName}
             </span>
             <span className="flex items-center">
-              <Clock className="w-4 h-4 mr-2 text-brand-primary" /> 阅读时间约 5 分钟
+              <Clock className="w-4 h-4 mr-2 text-brand-primary" /> 5 min read
             </span>
             <button className="flex items-center hover:text-brand-primary transition-colors">
-              <Share2 className="w-4 h-4 mr-2 text-brand-primary" /> 分享文章
+              <Share2 className="w-4 h-4 mr-2 text-brand-primary" /> Share
             </button>
           </div>
         </div>
@@ -100,13 +100,13 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
               prose-blockquote:border-l-4 prose-blockquote:border-brand-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-500
               prose-ul:list-disc prose-ul:pl-6 prose-ol:list-decimal prose-ol:pl-6
             "
-            dangerouslySetInnerHTML={{ __html: content || '<p>暂无内容</p>' }}
+            dangerouslySetInnerHTML={{ __html: content || '<p>No content.</p>' }}
           />
           
           <div className="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center">
             <div className="flex gap-3">
-              <span className="bg-brand-secondary text-brand-primary px-4 py-2 rounded-full text-xs font-bold">行业动态</span>
-              <span className="bg-brand-secondary text-brand-primary px-4 py-2 rounded-full text-xs font-bold">PURA 新品</span>
+              <span className="bg-brand-secondary text-brand-primary px-4 py-2 rounded-full text-xs font-bold">Industry News</span>
+              <span className="bg-brand-secondary text-brand-primary px-4 py-2 rounded-full text-xs font-bold">New Products</span>
             </div>
           </div>
         </article>

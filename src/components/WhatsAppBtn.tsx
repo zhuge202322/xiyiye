@@ -15,7 +15,7 @@ export default function WhatsAppBtn() {
       {/* 左侧悬浮提示气泡 */}
       <span className="absolute right-full mr-4 bg-white text-brand-dark px-4 py-2 rounded-xl text-sm font-bold shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap border border-gray-100 flex items-center">
         <span className="w-2 h-2 bg-[#25D366] rounded-full mr-2 animate-pulse"></span>
-        WhatsApp 客服在线
+        WhatsApp Live Chat
         <div className="absolute right-[-6px] top-1/2 -translate-y-1/2 w-3 h-3 bg-white rotate-45 border-r border-t border-gray-100"></div>
       </span>
     </a>

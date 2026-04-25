@@ -52,11 +52,11 @@ export default async function ShopPage({ searchParams }: { searchParams: Promise
       >
         <div className="absolute inset-0 bg-white/20"></div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-4 lg:px-8 text-center flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-4 tracking-tight">所有产品</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-4 tracking-tight">All Products</h1>
           <p className="text-gray-600 font-bold flex items-center justify-center text-sm">
-            <a href="/" className="hover:text-brand-primary transition">首页</a> 
+            <a href="/" className="hover:text-brand-primary transition">Home</a> 
             <ChevronRight className="w-4 h-4 mx-2" /> 
-            <span className="text-brand-primary">产品列表</span>
+            <span className="text-brand-primary">Products</span>
           </p>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default async function ShopPage({ searchParams }: { searchParams: Promise
         <aside className="w-full lg:w-64 shrink-0">
           <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-100 sticky top-28">
             <h3 className="text-lg font-extrabold text-brand-dark mb-6 border-b border-gray-100 pb-4">
-              产品分类
+              Categories
             </h3>
             <ul className="space-y-2">
               <li>
@@ -80,7 +80,7 @@ export default async function ShopPage({ searchParams }: { searchParams: Promise
                       : 'text-gray-600 hover:bg-gray-50 hover:text-brand-primary'
                   }`}
                 >
-                  全部产品
+                  All Products
                 </a>
               </li>
               {categories.map((cat: any) => {
@@ -108,31 +108,31 @@ export default async function ShopPage({ searchParams }: { searchParams: Promise
             </ul>
 
             <h3 className="text-lg font-extrabold text-brand-dark mb-6 border-b border-gray-100 pb-4 mt-10">
-              按场景筛选
+              Filter by Use Case
             </h3>
             <ul className="space-y-4 text-gray-600 font-medium">
               <li>
                 <label className="flex items-center space-x-3 cursor-pointer group">
                   <input type="checkbox" className="w-4 h-4 text-brand-primary rounded border-gray-300 focus:ring-brand-primary" />
-                  <span className="group-hover:text-brand-primary transition">日常家用洗护</span>
+                  <span className="group-hover:text-brand-primary transition">Daily Home Care</span>
                 </label>
               </li>
               <li>
                 <label className="flex items-center space-x-3 cursor-pointer group">
                   <input type="checkbox" className="w-4 h-4 text-brand-primary rounded border-gray-300 focus:ring-brand-primary" />
-                  <span className="group-hover:text-brand-primary transition">厨房重油污处理</span>
+                  <span className="group-hover:text-brand-primary transition">Heavy Kitchen Grease</span>
                 </label>
               </li>
               <li>
                 <label className="flex items-center space-x-3 cursor-pointer group">
                   <input type="checkbox" className="w-4 h-4 text-brand-primary rounded border-gray-300 focus:ring-brand-primary" />
-                  <span className="group-hover:text-brand-primary transition">卫浴与深层除垢</span>
+                  <span className="group-hover:text-brand-primary transition">Bathroom & Deep Descaling</span>
                 </label>
               </li>
               <li>
                 <label className="flex items-center space-x-3 cursor-pointer group">
                   <input type="checkbox" className="w-4 h-4 text-brand-primary rounded border-gray-300 focus:ring-brand-primary" />
-                  <span className="group-hover:text-brand-primary transition">企业商用大包装</span>
+                  <span className="group-hover:text-brand-primary transition">B2B Bulk Packaging</span>
                 </label>
               </li>
             </ul>
@@ -144,14 +144,14 @@ export default async function ShopPage({ searchParams }: { searchParams: Promise
           {/* 工具栏：排序与展示统计 */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-8 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 gap-4">
             <p className="text-gray-500 font-medium text-sm">
-              共找到 <span className="font-bold text-brand-dark">{filteredProducts.length}</span> 个产品
+              Found <span className="font-bold text-brand-dark">{filteredProducts.length}</span> products
             </p>
             <div className="flex items-center space-x-2 text-sm font-medium">
-              <span className="text-gray-500">排序方式:</span>
+              <span className="text-gray-500">Sort by:</span>
               <select className="border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary">
-                <option>默认排序</option>
-                <option>最新上架</option>
-                <option>热门销量</option>
+                <option>Default</option>
+                <option>Newest</option>
+                <option>Best Sellers</option>
               </select>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default async function ShopPage({ searchParams }: { searchParams: Promise
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" 
                       />
                     ) : (
-                      <div className="text-gray-400 font-medium">暂无图片</div>
+                      <div className="text-gray-400 font-medium">No image</div>
                     )}
                   </div>
                   
@@ -204,10 +204,10 @@ export default async function ShopPage({ searchParams }: { searchParams: Promise
               <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mb-6">
                 <Search className="w-8 h-8 text-gray-400" />
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-2">此分类下暂无产品</h3>
-              <p className="text-gray-500 mb-6">请尝试浏览其他分类或直接查看全部产品。</p>
+              <h3 className="text-xl font-bold text-brand-dark mb-2">No products in this category</h3>
+              <p className="text-gray-500 mb-6">Try browsing another category or view all products.</p>
               <a href="/shop" className="bg-brand-primary text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all">
-                返回全部产品
+                Back to All Products
               </a>
             </div>
           )}

@@ -16,8 +16,8 @@ const notoSansSC = Noto_Sans_SC({
 });
 
 export const metadata: Metadata = {
-  title: "中山欧得宝家庭用品有限公司 - 高端日化与家清产品智造专家",
-  description: "全球领先的日化 OEM/ODM 源头工厂",
+  title: "myklens — Premium Home Cleaning Products & OEM/ODM Manufacturer",
+  description: "Global supplier of laundry care, bathroom care, kitchen care and appliance care products. One-stop OEM/ODM service for premium home-cleaning brands.",
 };
 
 export default function RootLayout({
