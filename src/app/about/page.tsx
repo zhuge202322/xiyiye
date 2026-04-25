@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Award, Globe, ChevronDown, Search, Menu, ChevronRight, ShieldCheck, Leaf, Microscope, Building2, Phone, Mail } from "lucide-react";
+import JourneyTimeline from "@/components/JourneyTimeline";
 
 async function getCategories() {
   try {
@@ -134,82 +135,7 @@ export default async function AboutPage() {
             <p className="text-lg text-gray-500 font-medium">Two decades of dedication, building world-class home-cleaning manufacturing capability — every milestone proves our commitment.</p>
           </div>
 
-          <div className="relative max-w-5xl mx-auto">
-            {/* Center vertical line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-brand-primary/20 -translate-x-1/2 hidden md:block"></div>
-
-            <div className="space-y-16 relative z-10">
-              {/* Node 1 */}
-              <div className="flex flex-col md:flex-row items-center md:justify-between group">
-                <div className="md:w-[45%] text-left md:text-right mb-4 md:mb-0 pr-0 md:pr-12 w-full">
-                  <h4 className="text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-primary transition">MyKlens Founded</h4>
-                  <p className="text-gray-500 font-medium leading-relaxed">First daily-chemical production base set up in Guangdong, formally entering the laundry-cleaning sector and laying solid manufacturing foundations.</p>
-                </div>
-                <div className="w-16 h-16 bg-white border-4 border-brand-primary rounded-full flex items-center justify-center font-extrabold text-brand-primary text-xl shrink-0 z-10 relative shadow-[0_0_20px_rgba(0,91,79,0.2)] md:my-0 my-4">
-                  04
-                </div>
-                <div className="md:w-[45%] text-center md:text-left mt-4 md:mt-0 pl-0 md:pl-12 w-full">
-                  <span className="text-6xl md:text-7xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition duration-500">2004</span>
-                </div>
-              </div>
-
-              {/* Node 2 */}
-              <div className="flex flex-col md:flex-row-reverse items-center md:justify-between group">
-                <div className="md:w-[45%] text-left mb-4 md:mb-0 pl-0 md:pl-12 w-full">
-                  <h4 className="text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-primary transition">GMPC Certified</h4>
-                  <p className="text-gray-500 font-medium leading-relaxed">Adopted international quality management systems. Achieved ISO 9001 certification, gaining the key passport to high-end Western markets.</p>
-                </div>
-                <div className="w-16 h-16 bg-white border-4 border-brand-primary rounded-full flex items-center justify-center font-extrabold text-brand-primary text-xl shrink-0 z-10 relative shadow-[0_0_20px_rgba(0,91,79,0.2)] md:my-0 my-4">
-                  10
-                </div>
-                <div className="md:w-[45%] text-center md:text-right mt-4 md:mt-0 pr-0 md:pr-12 w-full">
-                  <span className="text-6xl md:text-7xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition duration-500">2010</span>
-                </div>
-              </div>
-
-              {/* Node 3 */}
-              <div className="flex flex-col md:flex-row items-center md:justify-between group">
-                <div className="md:w-[45%] text-left md:text-right mb-4 md:mb-0 pr-0 md:pr-12 w-full">
-                  <h4 className="text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-primary transition">50,000 m² New Industrial Park</h4>
-                  <p className="text-gray-500 font-medium leading-relaxed">Upgraded to Class 100,000 cleanroom workshops with mega-scale automated filling lines; capacity surpassed 100,000 tonnes / year.</p>
-                </div>
-                <div className="w-16 h-16 bg-white border-4 border-brand-primary rounded-full flex items-center justify-center font-extrabold text-brand-primary text-xl shrink-0 z-10 relative shadow-[0_0_20px_rgba(0,91,79,0.2)] md:my-0 my-4">
-                  16
-                </div>
-                <div className="md:w-[45%] text-center md:text-left mt-4 md:mt-0 pl-0 md:pl-12 w-full">
-                  <span className="text-6xl md:text-7xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition duration-500">2016</span>
-                </div>
-              </div>
-
-              {/* Node 4 */}
-              <div className="flex flex-col md:flex-row-reverse items-center md:justify-between group">
-                <div className="md:w-[45%] text-left mb-4 md:mb-0 pl-0 md:pl-12 w-full">
-                  <h4 className="text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-primary transition">Diversified Product Lines</h4>
-                  <p className="text-gray-500 font-medium leading-relaxed">Launched innovative laundry pods, scent booster beads and anti-mite/anti-bacterial liquid lines, supplying 300+ global brands with premium private label.</p>
-                </div>
-                <div className="w-16 h-16 bg-white border-4 border-brand-primary rounded-full flex items-center justify-center font-extrabold text-brand-primary text-xl shrink-0 z-10 relative shadow-[0_0_20px_rgba(0,91,79,0.2)] md:my-0 my-4">
-                  20
-                </div>
-                <div className="md:w-[45%] text-center md:text-right mt-4 md:mt-0 pr-0 md:pr-12 w-full">
-                  <span className="text-6xl md:text-7xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition duration-500">2020</span>
-                </div>
-              </div>
-
-              {/* Node 5 */}
-              <div className="flex flex-col md:flex-row items-center md:justify-between group">
-                <div className="md:w-[45%] text-left md:text-right mb-4 md:mb-0 pr-0 md:pr-12 w-full">
-                  <h4 className="text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-primary transition">Green Manufacturing & ESG Strategy</h4>
-                  <p className="text-gray-500 font-medium leading-relaxed">Embraced global sustainability trends — fully adopted bio-degradable formulas and PCR (Post-Consumer Recycled) packaging, opening a new era of sustainable manufacturing.</p>
-                </div>
-                <div className="w-16 h-16 bg-brand-primary border-4 border-white rounded-full flex items-center justify-center font-extrabold text-white text-xl shrink-0 z-10 relative shadow-[0_0_20px_rgba(0,91,79,0.5)] md:my-0 my-4 scale-110">
-                  24
-                </div>
-                <div className="md:w-[45%] text-center md:text-left mt-4 md:mt-0 pl-0 md:pl-12 w-full">
-                  <span className="text-6xl md:text-7xl font-black text-brand-primary/20 transition duration-500">2024</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <JourneyTimeline />
         </div>
       </section>
 

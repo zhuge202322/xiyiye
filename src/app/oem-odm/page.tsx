@@ -1,5 +1,6 @@
 import { ChevronRight, FlaskConical, Factory, Workflow, ShieldCheck, Palette, Trophy, CheckCircle2, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import CaseMarquee from "@/components/CaseMarquee";
 
 export const metadata: Metadata = {
   title: "OEM / ODM Manufacturing Services | MyKlens",
@@ -231,6 +232,11 @@ export default function OemOdmPage() {
             <p className="text-xl text-brand-gray font-medium leading-relaxed">
               We&apos;ve manufactured private-label home cleaning lines for retailers and DTC brands across 60+ countries.
             </p>
+          </div>
+
+          {/* Auto-scrolling case carousel */}
+          <div className="mb-16">
+            <CaseMarquee />
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
