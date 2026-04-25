@@ -27,7 +27,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
   const title = post.title.rendered;
   const content = post.content.rendered;
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-  const authorName = post._embedded?.author?.[0]?.name || "MyKlens Team";
+  const authorName = post._embedded?.author?.[0]?.name || "Myklens Team";
   
   const date = new Date(post.date).toLocaleDateString('en-US', {
     year: 'numeric',

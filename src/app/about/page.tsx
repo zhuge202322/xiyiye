@@ -28,9 +28,9 @@ export default async function AboutPage() {
       >
         <div className="absolute inset-0 bg-white/40"></div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-4 lg:px-8 text-center flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-4 tracking-tight">About MyKlens</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-4 tracking-tight">About Myklens</h1>
           <p className="text-gray-800 font-medium text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
-            A world-leading home cleaning OEM/ODM manufacturer. We harness science and nature to deliver clean, safe and refreshing living for families everywhere.
+            Founded in 2005, Myklens specializes in toilet cleaning blocks, air fresheners and liquid detergents — trusted on five continents and serving global brands as a certified OEM / ODM partner.
           </p>
           <p className="text-gray-600 font-bold flex items-center justify-center text-sm">
             <a href="/" className="hover:text-brand-primary transition">Home</a> 
@@ -50,30 +50,30 @@ export default async function AboutPage() {
                 Source Factory Direct
               </div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-brand-dark leading-tight">
-                Over 20 years of<br/><span className="text-brand-primary">specialty chemical manufacturing.</span>
+                18 years of expertise in<br/><span className="text-brand-primary">home cleaning manufacturing.</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed font-medium">
-                MyKlens was founded in 2004 and is headquartered in Guangdong, China — the world&apos;s manufacturing hub. As an internationally renowned daily-chemical OEM/ODM manufacturer, we provide one-stop product incubation and supply-chain manufacturing services to 300+ brands across 50+ countries.
+                <strong className="text-brand-dark">Our Story.</strong> Founded in 2005, Myklens specializes in toilet cleaning blocks, air fresheners and liquid detergents. Certified by WOOLWORTHS and an ISSA member, our products reach five continents with authentic international quality.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed font-medium">
-                From laundry pods, scent boosters and heavy-duty kitchen degreasers to fabric softeners — we operate 50,000 m² of GMPC-class cleanroom workshops and dozens of fully automated filling lines, with annual capacity exceeding 100,000 tonnes.
+                <strong className="text-brand-dark">Our Team.</strong> With 18 years of expertise and Level 3 Safety Production certification, our dedicated team ensures consistent quality that keeps global buyers returning. From R&D to logistics, we deliver trust in every product.
               </p>
               
               <div className="pt-4 grid grid-cols-2 gap-8 border-t border-gray-100">
                 <div>
-                  <div className="text-4xl font-extrabold text-brand-primary mb-2">50,000+</div>
-                  <div className="text-gray-500 font-medium">m² Modern Facility</div>
+                  <div className="text-4xl font-extrabold text-brand-primary mb-2">5</div>
+                  <div className="text-gray-500 font-medium">Continents Reached</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-extrabold text-brand-primary mb-2">300+</div>
-                  <div className="text-gray-500 font-medium">Global Brand Partners</div>
+                  <div className="text-4xl font-extrabold text-brand-primary mb-2">18+</div>
+                  <div className="text-gray-500 font-medium">Years of Expertise</div>
                 </div>
               </div>
             </div>
             
             <div className="relative">
               <div className="aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10 border border-gray-100 bg-gray-50">
-                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200" alt="Factory Facility" className="w-full h-full object-cover" />
+                <img src="/factory/exterior.jpg" alt="Myklens Factory Exterior" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-3xl shadow-xl z-20 border border-gray-100 max-w-xs">
                 <div className="flex items-center gap-4">
@@ -81,8 +81,8 @@ export default async function AboutPage() {
                     <ShieldCheck className="w-7 h-7" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-brand-dark text-xl">Consistent Quality</h4>
-                    <p className="text-gray-500 text-sm font-medium">ISO 9001 Quality System</p>
+                    <h4 className="font-extrabold text-brand-dark text-xl">Trusted Quality</h4>
+                    <p className="text-gray-500 text-sm font-medium">ISSA Member · WOOLWORTHS Certified</p>
                   </div>
                 </div>
               </div>
@@ -100,27 +100,27 @@ export default async function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="aspect-[16/9] rounded-[2rem] overflow-hidden group shadow-sm relative">
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" alt="R&D Laboratory" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/factory/rd.jpg" alt="R&D Laboratory" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
-                <h4 className="text-white font-bold text-xl">Premium Cleaning R&D Lab</h4>
+                <h4 className="text-white font-bold text-xl">In-house R&D Laboratory</h4>
               </div>
             </div>
             <div className="aspect-[16/9] rounded-[2rem] overflow-hidden group shadow-sm relative">
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200" alt="Modern Office" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/factory/exhibition.jpg" alt="Industry Exhibitions" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
-                <h4 className="text-white font-bold text-xl">Global Business Support Center</h4>
+                <h4 className="text-white font-bold text-xl">Global Trade Exhibitions</h4>
               </div>
             </div>
             <div className="aspect-[16/9] rounded-[2rem] overflow-hidden group shadow-sm relative">
-              <img src="https://images.unsplash.com/photo-1563452675059-cf5697693fc7?auto=format&fit=crop&q=80&w=1200" alt="Cleanroom" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/factory/production.jpg" alt="Production Workshop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
-                <h4 className="text-white font-bold text-xl">Class 100,000 GMPC Cleanroom</h4>
+                <h4 className="text-white font-bold text-xl">Production Workshop</h4>
               </div>
             </div>
             <div className="aspect-[16/9] rounded-[2rem] overflow-hidden group shadow-sm relative">
-              <img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=1200" alt="Filling Line" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/factory/equipment.jpg" alt="Automated Filling Line" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
-                <h4 className="text-white font-bold text-xl">Fully Automated Filling & Packaging</h4>
+                <h4 className="text-white font-bold text-xl">Automated Filling & Packaging Lines</h4>
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default async function AboutPage() {
               </div>
               <h3 className="text-2xl font-extrabold text-brand-dark mb-4">Cutting-edge R&D</h3>
               <p className="text-gray-600 leading-relaxed font-medium">
-                MyKlens runs a dedicated cleaning R&D laboratory. We partner deeply with global top-tier fragrance houses and chemical suppliers, with 2,000+ proven formulas — supporting microcapsule scent technology, plant-based extracts, and hypoallergenic mild formulations.
+Myklens runs a dedicated cleaning R&D laboratory with 18 years of formulation expertise across toilet cleaning blocks, air fresheners and liquid detergents — supporting custom fragrances, plant-based extracts and gentle, family-safe formulations.
               </p>
             </div>
 
@@ -164,7 +164,7 @@ export default async function AboutPage() {
               </div>
               <h3 className="text-2xl font-extrabold text-brand-dark mb-4">Strict Quality Control</h3>
               <p className="text-gray-600 leading-relaxed font-medium">
-                All workshops meet Class 100,000 GMPC standards. We strictly follow ISO 9001, SMETA, CE and EPA guidelines. Every batch undergoes dozens of stability, microbial and heavy-metal tests before shipment to ensure worry-free global export.
+Our facility is certified under Level 3 Safety Production. We are a WOOLWORTHS-approved supplier and ISSA member — every batch goes through stability, microbial and visual inspections before shipment to ensure worry-free global export.
               </p>
             </div>
 

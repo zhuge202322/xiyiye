@@ -48,7 +48,7 @@ export default async function ContactPage() {
             <div className="mb-12">
               <h2 className="text-3xl lg:text-4xl font-extrabold text-brand-dark mb-6">Global Support</h2>
               <p className="text-brand-gray font-medium text-lg leading-relaxed">
-                MyKlens has a worldwide sales and service network. Our representatives across multiple time zones respond fast and accurately to your B2B manufacturing inquiries.
+                Myklens has a worldwide sales and service network. Our representatives across multiple time zones respond fast and accurately to your B2B manufacturing inquiries.
               </p>
             </div>
 
@@ -58,8 +58,8 @@ export default async function ContactPage() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-dark text-lg mb-2">Global R&D HQ</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed font-medium">No. 88, Hi-Tech Industrial Park,<br/>Baiyun District, Guangzhou, Guangdong, China</p>
+                  <h4 className="font-bold text-brand-dark text-lg mb-2">Headquarters</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed font-medium">Floor 8, Building 3, No. 2 Fenghuang Road,<br/>Torch Development Zone, Zhongshan City,<br/>Guangdong Province, China</p>
                 </div>
               </div>
 
@@ -69,7 +69,7 @@ export default async function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-dark text-lg mb-2">Key Account Hotline</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed font-medium">+86 400-123-4567<br/>+86 (020) 8888-9999</p>
+                  <p className="text-gray-600 text-sm leading-relaxed font-medium">+86 760-88220790<br/>+86 760-88220791<br/>WhatsApp: +86 180 2215 3690</p>
                 </div>
               </div>
 
@@ -80,8 +80,7 @@ export default async function ContactPage() {
                 <div>
                   <h4 className="font-bold text-brand-dark text-lg mb-2">Email</h4>
                   <p className="text-gray-600 text-sm leading-relaxed font-medium">
-                    Sales: <a href="mailto:sales@myklens.com" className="text-brand-primary hover:underline">sales@myklens.com</a><br/>
-                    R&D: <a href="mailto:rd@myklens.com" className="text-brand-primary hover:underline">rd@myklens.com</a>
+                    <a href="mailto:contact@myklens.com" className="text-brand-primary hover:underline">contact@myklens.com</a>
                   </p>
                 </div>
               </div>

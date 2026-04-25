@@ -5,39 +5,39 @@ import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 
 const MILESTONES = [
   {
-    year: '2004',
-    title: 'MyKlens Founded',
-    desc: 'First daily-chemical production base in Guangdong, formally entering the laundry-cleaning sector and laying solid manufacturing foundations.',
+    year: '2005',
+    title: 'Myklens Founded',
+    desc: 'Established in Zhongshan, Guangdong. Specializing in toilet cleaning blocks, air fresheners and liquid detergents from day one.',
   },
   {
     year: '2010',
-    title: 'GMPC Certified',
-    desc: 'Adopted international quality systems. Achieved ISO 9001 certification, gaining the key passport to high-end Western markets.',
+    title: 'Going Global',
+    desc: 'First export shipments leave the factory — our products begin reaching customers in Europe, North America and Southeast Asia.',
   },
   {
-    year: '2016',
-    title: '50,000 m² New Park',
-    desc: 'Upgraded to Class 100,000 cleanroom workshops with mega-scale automated filling lines; capacity surpassed 100,000 tonnes / year.',
+    year: '2014',
+    title: 'WOOLWORTHS Certified',
+    desc: 'Passed strict supplier audits and became an approved manufacturer for WOOLWORTHS — a milestone for international quality recognition.',
+  },
+  {
+    year: '2018',
+    title: 'ISSA Member',
+    desc: 'Joined the International Sanitary Supply Association (ISSA), connecting with the world’s leading professional cleaning network.',
   },
   {
     year: '2020',
-    title: 'Diversified Lines',
-    desc: 'Launched innovative laundry pods, scent booster beads and anti-mite/anti-bacterial liquid lines, supplying 300+ global brands with premium private label.',
+    title: 'Level 3 Safety Production',
+    desc: 'Awarded Level 3 Safety Production certification — a recognition of our consistent quality control and safe manufacturing standards.',
   },
   {
-    year: '2022',
-    title: 'Smart Factory 4.0',
-    desc: 'Deployed IoT-driven MES across 12 lines, real-time QC dashboards, paperless production tracking and predictive maintenance.',
+    year: '2023',
+    title: '5 Continents Reached',
+    desc: 'Our home-cleaning products now ship to retailers and brands across all five inhabited continents.',
   },
   {
     year: '2024',
-    title: 'Green & ESG',
-    desc: 'Embraced sustainability — fully adopted bio-degradable formulas and PCR (Post-Consumer Recycled) packaging, opening a new era of eco manufacturing.',
-  },
-  {
-    year: '2026',
-    title: 'Global Expansion',
-    desc: 'Launching new overseas warehouses and partnerships across North America, Europe and the Middle East to better serve our 300+ brand partners.',
+    title: 'New R&D Center',
+    desc: 'Expanded the in-house formulation lab and launched new bio-degradable, eco-friendly product lines for sustainable home care.',
   },
 ];
 

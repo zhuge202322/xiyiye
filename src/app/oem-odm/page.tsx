@@ -3,31 +3,31 @@ import type { Metadata } from "next";
 import CaseMarquee from "@/components/CaseMarquee";
 
 export const metadata: Metadata = {
-  title: "OEM / ODM Manufacturing Services | MyKlens",
+  title: "OEM / ODM Manufacturing Services | Myklens",
   description: "End-to-end OEM and ODM home cleaning manufacturing — R&D, large-scale production, one-stop service, certified QC, custom packaging and successful global brand cases.",
 };
 
 const RD_HIGHLIGHTS = [
-  "300+ ready commercial formulas across laundry, bathroom, kitchen, and appliance care",
-  "20+ in-house chemists & senior fragrance designers",
-  "Stability, microbial, and compatibility testing labs",
-  "Co-development with global top-tier fragrance houses",
+  "Mature formulations for toilet cleaning blocks, air fresheners and liquid detergents",
+  "In-house chemists with 18 years of home-cleaning expertise",
+  "Stability, microbial and compatibility testing capability",
+  "Custom fragrance and packaging co-development",
 ];
 
 const CAPACITY_METRICS = [
-  { num: "20,000", unit: "m²", label: "Smart Factory" },
-  { num: "100,000+", unit: "pcs", label: "Daily Capacity" },
-  { num: "12", unit: "lines", label: "Automated Filling Lines" },
-  { num: "ISO", unit: "Class", label: "Workshop Standards" },
+  { num: "18+", unit: "yrs", label: "Manufacturing Experience" },
+  { num: "5", unit: "continents", label: "Markets Served" },
+  { num: "L3", unit: "cert.", label: "Safety Production" },
+  { num: "ISSA", unit: "member", label: "Industry Standard" },
 ];
 
 const SERVICE_FLOW = [
   { step: "01", title: "Consultation", desc: "Briefing call to understand your brand positioning, target market and budget." },
-  { step: "02", title: "Formula & Design", desc: "Match from our 300+ library or co-develop a new exclusive formula and packaging." },
+  { step: "02", title: "Formula & Design", desc: "Match from our existing library or co-develop a new exclusive formula and packaging." },
   { step: "03", title: "Sampling", desc: "Free physical samples within 7-15 days; iterate fragrance, color and pack." },
-  { step: "04", title: "Mass Production", desc: "Automated filling lines with 100% in-line QC; flexible MOQ from 3,000 pcs." },
+  { step: "04", title: "Mass Production", desc: "Automated filling lines with 100% in-line QC; flexible MOQ." },
   { step: "05", title: "QC & Compliance", desc: "Pre-shipment inspection, COA, MSDS, and target-market regulatory documents." },
-  { step: "06", title: "Global Logistics", desc: "FOB / CIF / DDP shipping support to 60+ countries via trusted forwarders." },
+  { step: "06", title: "Global Logistics", desc: "FOB / CIF / DDP shipping support across five continents via trusted forwarders." },
 ];
 
 const CERTIFICATIONS = [
@@ -94,7 +94,7 @@ export default function OemOdmPage() {
               World-class formulation, <br />ready for your brand.
             </h2>
             <p className="text-xl text-brand-gray mb-8 font-medium leading-relaxed">
-              Our R&D team has spent 15+ years developing and refining home-cleaning formulas that balance performance, safety and sustainability. Every formula we ship is benchmarked against leading global brands.
+              Our R&D team has spent 18 years developing and refining home-cleaning formulas — toilet cleaning blocks, air fresheners and liquid detergents — that balance performance, safety and sustainability.
             </p>
             <ul className="space-y-4">
               {RD_HIGHLIGHTS.map((item) => (
@@ -107,12 +107,12 @@ export default function OemOdmPage() {
           </div>
           <div className="relative">
             <div className="aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl">
-              <img src="/bj/bubble.jpg" alt="R&D laboratory" className="w-full h-full object-cover" />
+              <img src="/factory/rd.jpg" alt="R&D laboratory" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-3xl shadow-xl max-w-xs hidden md:block border border-gray-100">
               <div className="flex items-center gap-3 mb-2">
                 <FlaskConical className="w-6 h-6 text-brand-primary" />
-                <span className="font-extrabold text-brand-dark">300+ Formulas</span>
+                <span className="font-extrabold text-brand-dark">Mature Formulas</span>
               </div>
               <p className="text-sm text-brand-gray font-medium">Ready library + custom co-development.</p>
             </div>
@@ -230,7 +230,7 @@ export default function OemOdmPage() {
             <div className="inline-block px-4 py-1.5 bg-white text-brand-primary font-bold rounded-full text-sm mb-6">06 · SUCCESS CASES & PARTNERS</div>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-brand-dark leading-tight">Trusted by global brands.</h2>
             <p className="text-xl text-brand-gray font-medium leading-relaxed">
-              We&apos;ve manufactured private-label home cleaning lines for retailers and DTC brands across 60+ countries.
+              We&apos;ve manufactured private-label home cleaning lines for retailers and DTC brands across five continents.
             </p>
           </div>
 

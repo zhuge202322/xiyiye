@@ -38,10 +38,12 @@ export default async function Footer() {
           
           <div className="lg:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-12 h-12 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-2xl">M</div>
+              <span className="inline-block bg-white rounded-lg px-4 py-2">
+                <img src="/logo.jpg" alt="Myklens" className="h-8 w-auto object-contain" />
+              </span>
             </a>
             <p className="text-gray-400 mb-8 max-w-sm leading-relaxed">
-              Committed to providing global customers with premium, safe and eco-friendly home care products. 15 years of experience in daily-chemical OEM/ODM — your trusted manufacturing partner.
+              Committed to providing global customers with premium, safe and eco-friendly home care products. 18 years of experience in toilet cleaning blocks, air fresheners and liquid detergents — your trusted manufacturing partner.
             </p>
             <div className="flex flex-wrap gap-3">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-primary hover:text-white transition-all"><FacebookIcon className="w-5 h-5" /></a>
@@ -81,7 +83,11 @@ export default async function Footer() {
             <ul className="space-y-4 text-gray-400">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-brand-primary shrink-0 mt-0.5" />
-                <span>123 Technology Road, Daily Chemical Industrial Park, Zhongshan City, Guangdong Province, China</span>
+                <span>Floor 8, Building 3, No. 2 Fenghuang Road, Torch Development Zone, Zhongshan City, Guangdong Province, China</span>
+              </li>
+              <li className="flex items-center">
+                <Phone className="w-5 h-5 mr-3 text-brand-primary shrink-0" />
+                <span>+86 760-88220790 / 88220791</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-brand-primary shrink-0" />
@@ -89,7 +95,7 @@ export default async function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-brand-primary shrink-0" />
-                <span>sales@myklens.com</span>
+                <span>contact@myklens.com</span>
               </li>
             </ul>
           </div>

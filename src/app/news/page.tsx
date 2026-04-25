@@ -27,7 +27,7 @@ export default async function NewsPage() {
         <div className="relative z-10 max-w-[1440px] mx-auto px-4 lg:px-8 text-center flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark mb-4 tracking-tight">Blog</h1>
           <p className="text-gray-800 font-medium text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
-            Latest R&D updates, industry trends and new product launches from MyKlens.
+            Latest R&D updates, industry trends and new product launches from Myklens.
           </p>
           <p className="text-gray-600 font-bold flex items-center justify-center text-sm">
             <a href="/" className="hover:text-brand-primary transition">Home</a> 

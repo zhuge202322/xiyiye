@@ -50,27 +50,27 @@ const reasons = [
   {
     icon: FlaskConical,
     title: 'In-house R&D Lab',
-    desc: '15+ years of experienced formulators and a 300+ commercial formula library, ready for fast custom development.',
+    desc: '18 years of formulation expertise across toilet cleaning blocks, air fresheners and liquid detergents — ready for fast custom development.',
   },
   {
     icon: Factory,
-    title: '20,000 m² Smart Factory',
-    desc: 'Automated production lines with daily capacity of 100,000+ units, ensuring on-time delivery for global brands.',
+    title: 'Modern Production Lines',
+    desc: 'Automated filling and packaging lines with strict in-line QC, ensuring stable quality and on-time delivery for global brands.',
   },
   {
     icon: Award,
-    title: 'Certified Quality',
-    desc: 'ISO 9001, GMPC, SGS, SMETA and BSCI certified — strict QC at every production stage.',
+    title: 'Internationally Certified',
+    desc: 'WOOLWORTHS approved supplier, ISSA member and Level 3 Safety Production certified — a verified manufacturing partner.',
   },
   {
     icon: ShieldCheck,
     title: 'Safe & Eco-friendly',
-    desc: 'Cosmetic-grade ingredients, controlled pH, no harsh acids or bleaches — safe for families and the environment.',
+    desc: 'Bio-degradable, eco-friendly raw materials with controlled pH — safe for families and gentle on the environment.',
   },
   {
     icon: Globe,
-    title: 'Global Export Experience',
-    desc: 'Trusted partner of 200+ private labels across North America, Europe, the Middle East and Southeast Asia.',
+    title: 'Five-Continent Reach',
+    desc: 'Our products serve retailers and brands across North America, Europe, Australia, the Middle East, Asia and beyond.',
   },
   {
     icon: Headset,
@@ -133,20 +133,20 @@ export default async function Home() {
 
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 bg-brand-secondary rounded-3xl p-10">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">15+</div>
+              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">18+</div>
               <div className="text-brand-gray font-bold uppercase tracking-wider text-xs">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">300+</div>
-              <div className="text-brand-gray font-bold uppercase tracking-wider text-xs">Mature Formulas</div>
+              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">5</div>
+              <div className="text-brand-gray font-bold uppercase tracking-wider text-xs">Continents Served</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">100k+</div>
-              <div className="text-brand-gray font-bold uppercase tracking-wider text-xs">Daily Capacity</div>
+              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">L3</div>
+              <div className="text-brand-gray font-bold uppercase tracking-wider text-xs">Safety Production</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">60+</div>
-              <div className="text-brand-gray font-bold uppercase tracking-wider text-xs">Export Countries</div>
+              <div className="text-4xl md:text-5xl font-black text-brand-primary mb-2">ISSA</div>
+              <div className="text-brand-gray font-bold uppercase tracking-wider text-xs">Member &amp; WOOLWORTHS</div>
             </div>
           </div>
         </div>
