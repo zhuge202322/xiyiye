@@ -61,7 +61,7 @@ export default function ArticleShowcase({ posts }: { posts: Post[] }) {
   return (
     <section className="py-24 bg-[#f8f9fa] overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-8 space-y-32">
-        {posts.map((post, index) => {
+        {posts.slice(0, 2).map((post, index) => {
           const title = post.title.rendered;
           const excerpt = post.excerpt.rendered;
           const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;

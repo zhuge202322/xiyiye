@@ -51,7 +51,7 @@ export default function Header() {
       <div className="max-w-[1440px] mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
         {/* Logo only - no company name */}
         <a href="/" className="flex items-center gap-2">
-          <img src="/logo.jpg" alt="Myklens" className="h-10 md:h-12 w-auto object-contain" />
+          <img src="/logo.png" alt="Myklens" className="h-10 md:h-12 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
