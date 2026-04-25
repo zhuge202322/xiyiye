@@ -98,7 +98,7 @@ export default async function AboutPage() {
             <p className="text-lg text-gray-500 font-medium">World-class hardware is the foundation of outstanding quality. Fully automated lines and a top-tier R&D lab keep capability within reach.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="aspect-[16/9] rounded-[2rem] overflow-hidden group shadow-sm">
+            <div className="aspect-[16/9] rounded-[2rem] overflow-hidden group shadow-sm relative">
               <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" alt="R&D Laboratory" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                 <h4 className="text-white font-bold text-xl">Premium Cleaning R&D Lab</h4>
