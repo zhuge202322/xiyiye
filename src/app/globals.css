@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@theme inline {
+@theme {
   --color-brand-primary: #005b4f;
   --color-brand-secondary: #e8f3f1;
   --color-brand-accent: #64a19d;

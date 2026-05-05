@@ -39,7 +39,7 @@ export default async function Footer() {
           <div className="lg:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-6">
               <span className="inline-block bg-white rounded-lg px-4 py-2">
-                <img src="/logo.png" alt="Myklens" className="h-8 w-auto object-contain" />
+                <img src="/bj/logo.png" alt="Myklens" className="h-8 w-auto object-contain" />
               </span>
             </a>
             <p className="text-gray-400 mb-8 max-w-sm leading-relaxed">

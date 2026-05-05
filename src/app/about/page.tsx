@@ -73,7 +73,14 @@ export default async function AboutPage() {
             
             <div className="relative">
               <div className="aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10 border border-gray-100 bg-gray-50">
-                <img src="/factory/exterior.jpg" alt="Myklens Factory Exterior" className="w-full h-full object-cover" />
+                <video
+                  src="/bj/about.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-3xl shadow-xl z-20 border border-gray-100 max-w-xs">
                 <div className="flex items-center gap-4">

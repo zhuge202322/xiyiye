@@ -3,8 +3,8 @@ import { Award, Globe, ChevronDown, Search, Menu, ArrowRight, PlayCircle, Chevro
 
 async function getCategories() {
   try {
-    const res = await fetch('http://45.145.229.20:6411/?rest_route=/wc/store/v1/products/categories', {
-      next: { revalidate: 3600 }
+    const res = await fetch('http://45.145.229.20:6411/?rest_route=/wc/store/v1/products/categories&per_page=100', {
+      cache: 'no-store'
     });
     if (!res.ok) return [];
     return JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));
@@ -16,8 +16,8 @@ async function getCategories() {
 
 async function getProducts() {
   try {
-    const res = await fetch('http://45.145.229.20:6411/?rest_route=/wc/store/v1/products', {
-      next: { revalidate: 3600 }
+    const res = await fetch('http://45.145.229.20:6411/?rest_route=/wc/store/v1/products&per_page=100', {
+      cache: 'no-store'
     });
     if (!res.ok) return [];
     return JSON.parse(JSON.stringify(await res.json()).replace(/http:\/\/45\.145\.229\.20:6411/g, '/wp-proxy'));

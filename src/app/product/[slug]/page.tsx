@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { Award, Globe, ChevronDown, Search, Menu, ChevronRight, Check, Phone, Mail, MessageSquareText, FileText, Download } from "lucide-react";
+import { Award, Globe, ChevronDown, Search, Menu, ChevronRight, Check, Phone, Mail } from "lucide-react";
 import { notFound } from "next/navigation";
 import ProductGallery from "@/components/ProductGallery";
+import ProductInquiryActions from "@/components/ProductInquiryActions";
+import CollapsibleProductDescription from "@/components/CollapsibleProductDescription";
 
 async function getProduct(slug: string) {
   try {
@@ -99,28 +101,9 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               <span className="text-brand-gray font-medium">B2B Certified / Customizable Formula</span>
             </div>
 
-            {/* 产品简短描述 */}
-            <div 
-              className="prose prose-brand text-gray-600 text-lg leading-relaxed mb-10"
-              dangerouslySetInnerHTML={{ __html: product.short_description || '<p>No short description.</p>' }}
-            />
+            <CollapsibleProductDescription html={product.short_description || '<p>No short description.</p>'} />
 
-            {/* B2B 询盘与服务支持按钮组 */}
-            <div className="space-y-4">
-              <button className="w-full bg-brand-primary text-white py-5 px-8 rounded-full font-bold text-xl hover:bg-opacity-90 transition-all flex items-center justify-center shadow-lg shadow-brand-primary/30">
-                <MessageSquareText className="w-6 h-6 mr-3" />
-                Submit Inquiry / Get Bulk Quote
-              </button>
-              
-              <div className="grid grid-cols-2 gap-4">
-                <button className="w-full bg-white border-2 border-brand-primary text-brand-primary py-4 px-6 rounded-full font-bold text-lg hover:bg-brand-primary hover:text-white transition-all flex items-center justify-center">
-                  <FileText className="w-5 h-5 mr-2" /> Request Sample
-                </button>
-                <button className="w-full bg-gray-100 text-brand-dark py-4 px-6 rounded-full font-bold text-lg hover:bg-gray-200 transition-all flex items-center justify-center">
-                  <Download className="w-5 h-5 mr-2" /> Download Spec Sheet
-                </button>
-              </div>
-            </div>
+            <ProductInquiryActions productName={product.name} />
 
             <ul className="mt-10 space-y-4 border-t border-gray-100 pt-8 text-sm text-gray-500 font-medium">
               <li className="flex items-center">

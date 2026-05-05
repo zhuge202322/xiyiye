@@ -51,7 +51,7 @@ export default function Header() {
       <div className="max-w-[1440px] mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
         {/* Logo only - no company name */}
         <a href="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Myklens" className="h-10 md:h-12 w-auto object-contain" />
+          <img src="/bj/logo.png" alt="Myklens" className="h-10 md:h-12 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
@@ -94,7 +94,7 @@ export default function Header() {
                         {cat.children.map((sub) => (
                           <li key={sub.slug}>
                             <a
-                              href={`/shop?category=${sub.slug}`}
+                              href={`/product/${sub.slug}`}
                               className="text-gray-600 hover:text-brand-primary text-sm font-medium transition"
                             >
                               {sub.name}
@@ -185,7 +185,7 @@ export default function Header() {
                         {cat.children.map((sub) => (
                           <li key={sub.slug}>
                             <a
-                              href={`/shop?category=${sub.slug}`}
+                              href={`/product/${sub.slug}`}
                               className="block py-1.5 text-gray-600 text-sm"
                             >
                               {sub.name}

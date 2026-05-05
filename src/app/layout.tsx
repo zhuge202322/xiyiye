@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
+import ThemeCustomizer from "@/components/ThemeCustomizer";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -37,6 +38,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppBtn />
+        <ThemeCustomizer />
       </body>
     </html>
   );
