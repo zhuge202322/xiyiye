@@ -2,12 +2,12 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-brand-primary: #005b4f;
-  --color-brand-secondary: #e8f3f1;
-  --color-brand-accent: #64a19d;
+  --color-brand-primary: #0261A3;
+  --color-brand-secondary: #edf6ff;
+  --color-brand-accent: #5d87b4;
   --color-brand-lavender: #e6e6fa;
-  --color-brand-dark: #1a1a1a;
-  --color-brand-gray: #5f6368;
+  --color-brand-dark: #142235;
+  --color-brand-gray: #56677a;
   --font-sans: var(--font-plus-jakarta), var(--font-noto-sans-sc), sans-serif;
 }
 
